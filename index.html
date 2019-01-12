@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdn.rawgit.com/BrainJS/brain.js/master/browser.js"></script>
+    <style>
+        #canvas {
+            cursor: pointer;
+        }
+
+        #canvas-wrapper {
+            display: block;
+            margin: auto;
+            width: 150px;
+        }
+
+        #user-input-img img {
+            width: 50px;
+            border: 1px solid #dee2e6;
+        }
+
+        #user-input-img {
+            padding-top: 30px;
+        }
+
+        body {
+            color: #5a5a5a;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div id="app">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal">Draw 3 numbers and guess</h5>
+        </div>
+        <div class="container pt-3">
+            <div id="canvas-wrapper"></div>
+            <div class="row">
+                <div class="mx-auto lead my-3" id="instruction"></div> 
+            </div>
+            <div class="row">
+                <div class="mx-auto">
+                    <button type="button" class="btn btn-warning" id="clear">Clear</button>
+                    <button type="button" class="btn btn-primary" id="done">Done</button>
+                </div> 
+            </div>
+            <div class="card-deck mb-3 text-center" id="user-input-img"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
