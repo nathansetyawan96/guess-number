@@ -121,6 +121,7 @@
         var input = x.concat(y);
 
         if (startPredict) {
+            resetAll();
             predict(input);
             return;
         }
